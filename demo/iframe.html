@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9] <!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Seamless Iframe Demo</title>
+    <link rel="stylesheet" href="/dist/seamless-iframe.css"/>
+    <style>
+        html {
+            border: 2px dashed silver;
+        }
+    </style>
+</head>
+<body>
+    <h2>The iframe</h2>
+
+    <h3>Style inheritance</h3>
+    <ul>
+        <li class="styleInheritance">If it's <strong>green</strong> is inheriting styles from a &lt;style&gt; defined outside.</li>
+        <li class="linkInheritance">If it's <strong>green</strong> is inheriting styles from a &lt;link&gt; defined outside.</li>
+    </ul>
+
+    <h3>URL target</h3>
+    <ul>
+        <li><a href="#hash">Hash</a> (in parent)</li>
+        <li><a href="relative">Relative</a> (to the parent)</li>
+        <li><a href="http://absolute.com">Absolute</a> (to the parent)</li>
+        <li><a href="self" target="_self">Into the iframe itself</a> (not recommended)</li>
+    </ul>
+
+    <h3>Block element behavior</h3>
+    <ul>
+        <li><button id="expand-x">Expand X</button></li>
+        <li><button id="expand-y">Expand Y</button></li>
+    </ul>
+
+    <script src="/dist/seamless-iframe.js"></script>
+
+    <script>
+        document.getElementById('expand-x').onclick = function () {
+            this.parentNode.insertAdjacentHTML('beforeend', ' - ' + this.innerHTML);
+        };
+
+        document.getElementById('expand-y').onclick = function () {
+            this.parentNode.insertAdjacentHTML('beforeend', '<p>' + this.innerHTML + '</p>');
+        };
+    </script>
+</body>
+</html>

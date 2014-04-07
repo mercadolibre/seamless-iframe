@@ -1,0 +1,7 @@
+iframe[seamless] {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}

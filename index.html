@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9] <!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Seamless Iframe Demo</title>
+    <link rel="stylesheet" href="/dist/seamless-parent.css"/>
+    <link rel="stylesheet" href="/demo/inheritance-test.css"/>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .styleInheritance {
+            color: green;
+        }
+
+        #gh-ribbon {
+            border: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seamless Iframe Demo</h1>
+
+    <p>A fallback that emulates the main features of the <a href="http://www.w3.org/TR/2011/WD-html5-20110525/the-iframe-element.html#attr-iframe-seamless" rel="nofollow" target="_blank">seamless iframe</a>.</p>
+
+    <iframe src="/demo/iframe.html" seamless></iframe>
+
+    <a href="https://github.com/mercadolibre/seamless-iframe" target="_blank" rel="external">
+        <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" id="gh-ribbon"/>
+    </a>
+
+    <script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></script>
+    <script src="/dist/seamless-parent.js"></script>
+</body>
+</html>
