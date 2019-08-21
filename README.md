@@ -13,7 +13,7 @@ Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#Attribu
 
 ## Features
 
-*Seamless Iframe* will:
+*Seamless iframe* will:
 
 - open any anchor in the parent, unless you specify otherwise,
 - inherit the CSS declarations from the parent,
@@ -85,4 +85,4 @@ Link to `/dist/seamless-iframe.js` file:
 - Also [see the issue tracker](https://github.com/mercadolibre/seamless-iframe/issues).
 
 ## Support
-- Tested in most of mayor browsers.
+- Tested in most major browsers.
